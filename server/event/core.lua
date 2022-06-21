@@ -1,3 +1,5 @@
 local cfg = Config()
 
-TriggerEvent(cfg.server().ESX.trigger, function(obj) ESX = obj end)
+TriggerEvent(cfg.server().ESX.trigger, function(data) 
+    ESX = data 
+end)
