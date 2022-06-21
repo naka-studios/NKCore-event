@@ -1,11 +1,22 @@
-Config = {}
+Server_Config = {}
 
-Config.ESX = {
+Server_Config.ESX = {
     enable = true,
     trigger = "esx:getSharedObject"
 }
+Server_Config.Webhook = {
+    enable = true,
+    avatar = "profile_bot",
+    url = "discord_webhook",
+    thumbnail = "",
+    author = {
+        name = "Benjamin4k",
+        icon = "",
+        url = ""
+    }
+}
 
-Config.EventLimit = {
+Server_Config.EventLimit = {
     enable = true,
     list = {
         ["gcPhone:transfer"] = 5,
@@ -19,7 +30,7 @@ Config.EventLimit = {
     }
 }
 
-Config.EventWhitelist = {
+Server_Config.EventWhitelist = {
     enable = true,
     list = {
         { 
