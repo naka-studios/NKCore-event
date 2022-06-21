@@ -1,0 +1,3 @@
+ESX = nil
+Data = {}
+NKCore = {}
