@@ -4,6 +4,7 @@ Server_Config.ESX = {
     enable = true,
     trigger = "esx:getSharedObject"
 }
+
 Server_Config.Webhook = {
     enable = true,
     avatar = "profile_bot",
@@ -13,6 +14,14 @@ Server_Config.Webhook = {
         name = "Benjamin4k",
         icon = "",
         url = ""
+    }
+}
+
+Server_Config.Drop = {
+    prefix = "NKCore event security"
+    message = {
+        EventLimit = "Trigger abuse detect",
+        EventWhitelist = "Attempt to trigger whitelisted event"
     }
 }
 
