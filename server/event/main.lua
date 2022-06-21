@@ -30,7 +30,7 @@ if cfg.server().ESX.enable and cfg.server().EventWhitelist.enable then
             local whitelist = b.job
             
             if job ~= whitelist then 
-                webhook(src,"> ID :"..src,"\n> Player Name:"..name.."\n> Trigger:"..b.event.."\n> Reason:"..b.reason.."")
+                webhook(src,{title = name, description = {"> ID:"..src.."\n> Trigger:"..b.event.."\n> Reason:"..b.reason..""}})
                 kick(src,"NKCore event security | Attempt to trigger whitelisted event")
             end
         end)

@@ -2,15 +2,15 @@ function Config()
     self = {}
     
     self.client = function()
-        return Config
+        return Client_Config
     end
 
     self.server = function()
-        return Config
+        return Server_Config
     end
 
     self.shared = function()
-        return Config
+        return Shared_Config
     end
 
     return self
