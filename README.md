@@ -1,6 +1,8 @@
-# Naka Core (NKCore)
+# Naka Core event (NKCore event)
 
-    Simple system to detect suspicious event
+    Basic system to detect player 
+    - who trigger unlisted event
+    - who abusing trigger
 
 # License
 
