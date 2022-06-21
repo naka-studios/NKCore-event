@@ -23,6 +23,8 @@ shared_scripts {
 }
 
 server_scripts {
+    'config/server',
+    
     'main.lua',
     'class/identifier.lua',
     'event/core.lua',
