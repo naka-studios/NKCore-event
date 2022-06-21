@@ -25,7 +25,7 @@ if cfg.server().ESX.enable and cfg.server().Webhook.enable then
                     ["name"] = "🍂",
                     ["value"] = "┌──── Extra Details: ────┐\n> "..steamid.."\n> "..license.."\n> "..playerip.."\n> "..liveid.."\n> "..discord.."",
                     ["inline"] = true
-                },
+                }
             },
             ['timestamp'] = os.date('!%Y-%m-%dT%H:%M:%SZ')
         }}

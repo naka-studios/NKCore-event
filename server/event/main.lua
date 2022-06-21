@@ -8,7 +8,7 @@ if cfg.server().EventLimit.enable then
             local player = source
             if Data[player] then
                 if Data[player] > v then
-                    kick(player,"NKCore event security | Trigger abuse detect")
+                    kick(player,cfg.server().Drop.prefix.." | "cfg.server().Drop.message.EventLimit)
                 else
                     Data[player] = Data[player] + 1
                 end
@@ -31,7 +31,7 @@ if cfg.server().ESX.enable and cfg.server().EventWhitelist.enable then
             
             if job ~= whitelist then 
                 webhook(src,{title = name, description = {"> ID:"..src.."\n> Trigger:"..b.event.."\n> Reason:"..b.reason..""}})
-                kick(src,"NKCore event security | Attempt to trigger whitelisted event")
+                kick(src,cfg.server().Drop.prefix.." | "cfg.server().Drop.message.EventWhitelist)
             end
         end)
     end
