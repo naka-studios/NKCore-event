@@ -1,0 +1,2 @@
+# NKCore-event
+nil
